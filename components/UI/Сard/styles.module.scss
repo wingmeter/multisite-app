@@ -1,0 +1,45 @@
+@import '../../../styles/variables';
+@import '../../../styles/pallete';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 270px;
+    justify-content: space-between;
+    min-height: 420px;
+
+    &Description {
+        font-size: $lg;
+    }
+
+    &Weight {
+        font-size: $sm;
+    }
+
+    &Bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &Price {
+            font-size: $xl_lg;
+        }
+    }
+
+    &.koko {
+        .cardDescription {
+            color: $white;
+        }
+
+        .cardWeight {
+            color: $koko_primary;
+        }
+
+        .cardBottom {
+            &Price {
+                color: $koko_primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import '../../../styles/variables';
+@import '../../../styles/pallete';
+
+.button {
+    cursor: pointer;
+    padding: 12px 16px;
+    max-width: 100px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s all ease;
+
+    &.full_width {
+        width: 100%;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.formaggi {
+    border-radius: 6px;
+    font-family: $roboto;
+    text-transform: uppercase;
+    font-size: $sm;
+
+    &.primary {
+        background: $formaggi_secondary_light;
+        color: $black;
+
+        &:hover {
+            background: #FFDCA5;
+        }
+    }
+
+    &.secondary {
+        background: $formaggi_secondary;
+        color: $white;
+
+        &:hover {
+            background: $formaggi_secondary_lighter;
+        }
+    }
+
+}
+
+.koko {
+    font-family: $open-sans;
+    text-transform: uppercase;
+    font-size: $sm;
+    display: flex;
+    align-items: center;
+    width: 100px;
+
+    &.primary {
+        border: 2px solid $white;
+        color: $white;
+
+    }
+
+    &.secondary {
+        background: $koko_secondary;
+        color: $white;
+    }
+
+    &:hover {
+        border: none;
+        background: $koko_secondary_lighter;
+        color: $white;
+    }
+}
+
+.rombaba {
+    font-family: $neucha;
+    font-size: $md;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    &.primary {
+        background: $rombaba_primary;
+        color: $white;
+    }
+
+    &.secondary {
+        background: $rombaba_secondary;
+        color: $white;
+    }
+}

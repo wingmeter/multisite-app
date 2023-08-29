@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+@import '../../../styles/pallete';
+
+.h1,
+.h2,
+.h3 {
+    &.formaggi {
+        font-family: $trixiecyr-plain;
+    }
+
+    &.koko {
+        font-family: $museo-cyrl;
+    }
+
+    &.rombaba {
+        font-family: $neucha;
+    }
+}
+
+.h4,
+.p,
+.span {
+    &.formaggi {
+        font-family: $roboto;
+    }
+
+    &.koko {
+        font-family: $open-sans;
+    }
+
+    &.rombaba {
+        font-family: $neucha;
+    }
+}

@@ -1,0 +1,151 @@
+@import '../../../styles/variables';
+@import '../../../styles/pallete';
+
+.footer {
+    width: 100%;
+
+    &.koko {
+        background: url('../../../public/assets/images/kokoBG.jpeg'), lightgray 0% 0% / 100px 100px repeat;
+    }
+
+    .footerContainer {
+        padding: 30px 0;
+
+        .topPartContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-bottom: 30px;
+
+            &.formaggi .topPartTitle {
+                text-transform: uppercase;
+            }
+
+            .topPartTitle {
+                font-size: 36px;
+
+                &.koko {
+                    color: $white;
+                }
+            }
+
+
+            .topPartContent {
+                display: flex;
+                gap: 30px;
+
+                &.formaggi {
+                    .topPartContentTitle {
+                        font-size: $xl;
+                        color: $formaggi_primary;
+                    }
+                }
+
+                &.koko {
+                    .topPartContentTitle {
+                        font-size: $xl_lg;
+                        color: $white;
+                    }
+                }
+
+                &.rombaba {
+                    .topPartContentTitle {
+                        font-size: $xl_lg;
+                    }
+                }
+
+                .topPartContentTitle {
+                    margin-bottom: $xl;
+                }
+
+                .topPartList {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    max-width: 530px;
+
+                    .formaggi.topPartListItem p {
+                        color: $formaggi_primary;
+                        font-size: $sm;
+                    }
+
+                    .koko.topPartListItem p {
+                        color: $koko_primary;
+                        font-size: $sm;
+                    }
+                }
+            }
+        }
+
+        .bottomPartContainer {
+            gap: 80px;
+            padding-top: 60px;
+            align-items: flex-start;
+
+            .contactInfo,
+            .deliveryInfo,
+            .bonusInfo,
+            .copyrightInfo {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .formaggi.contactInfo p {
+                color: $formaggi_primary;
+                font-size: $sm;
+            }
+
+            .koko.contactInfo p {
+                color: $koko_primary;
+                font-size: $sm;
+            }
+
+            .koko.contactInfo h2 {
+                color: $white;
+                font-size: $xl_lg;
+                font-family: $open-sans;
+                font-weight: 400;
+            }
+
+            .contactInfo .apps {
+                display: flex;
+                gap: 10px;
+            }
+
+            .koko.deliveryInfo, .koko.bonusInfo {
+                color: $white;
+                font-size: $xl;
+            }
+            
+
+            .formaggi.copyrightInfo .copyrightText {
+                color: $formaggi_primary;
+                font-size: $sm;
+            }
+
+            .koko.copyrightInfo .copyrightText {
+                color: $koko_primary;
+                font-size: $sm;
+            }
+
+            .copyrightInfo .copyrightIcons {
+                display: flex;
+                gap: 10px;
+            }
+
+        }
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+    align-items: center;
+}
